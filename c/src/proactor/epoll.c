@@ -1358,7 +1358,7 @@ static int pgetaddrinfo(const char *host, const char *port, int flags, struct ad
   struct addrinfo hints = { 0 };
   hints.ai_family = AF_UNSPEC;
   hints.ai_socktype = SOCK_STREAM;
-  hints.ai_flags = AI_V4MAPPED | AI_ADDRCONFIG | flags;
+  hints.ai_flags = AI_ADDRCONFIG | flags;
   return getaddrinfo(host, port, &hints, res);
 }
 
