@@ -21,6 +21,7 @@
  */
 
 #include <proton/netaddr.h>
+#include <netinet/in.h>
 
 /* Common code for proactors that use the POSIX/Winsock sockaddr library for socket addresses. */
 
